@@ -296,12 +296,15 @@ class Blockreinsurance extends Module
 				'title' => $this->l('ID'),
 				'width' => 120,
 				'type' => 'text',
+				'search' => false,
+				'orderby' => false
 			),
 			'text' => array(
 				'title' => $this->l('Text'),
 				'width' => 140,
 				'type' => 'text',
-				'filter_key' => 'a!lastname'
+				'search' => false,
+				'orderby' => false
 			),
 		);
 
@@ -310,7 +313,7 @@ class Blockreinsurance extends Module
 
 		$helper = new HelperList();
 		$helper->shopLinkType = '';
-		$helper->simple_header = true;
+		$helper->simple_header = false;
 		$helper->identifier = 'id_reinsurance';
 		$helper->actions = array('edit', 'delete');
 		$helper->show_toolbar = true;
