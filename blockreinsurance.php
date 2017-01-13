@@ -39,7 +39,7 @@ class Blockreinsurance extends Module
 			$this->tab = 'front_office_features';
 		else
 			$this->tab = 'Blocks';
-		$this->version = '2.2.0';
+		$this->version = '2.2.1';
 		$this->author = 'PrestaShop';
 
 		$this->bootstrap = true;
